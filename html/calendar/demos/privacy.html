@@ -1,0 +1,234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>Interactive full website by TemplateWorld.com!Interactive full website by TemplateWorld.com!</title>
+  <link rel="stylesheet" href="styles.css" type="text/css" />
+
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script><!--Common jQuery plugin here -->
+
+  <!--Contact starts here -->
+<script type="text/javascript" src="include/jquery.twit.min.js"></script>
+<script type="text/javascript" src="include/jquery.twit.js"></script>
+<link href="include/jquery.twit.css" type="text/css" rel="stylesheet" />
+<!--Contact ends here -->
+
+<!--Twitter start here -->
+<script type="text/javascript" src="include/jquery.example.js"></script>
+<script type="text/javascript" src="include/jquery.validate.pack.js"></script>
+<script type="text/javascript" src="include/jquery.contactable.js"></script>
+<link rel="stylesheet" href="include/contactable.css" type="text/css" />
+<!--Twitter ends here -->
+
+<link href="include/ad.css" type="text/css" rel="stylesheet" /><!--ad css here -->
+
+
+<script type="text/javascript">
+//Contact starts here	
+	$(function(){
+		$('#contactAt').contactable({
+	 		recipient: 'email@companyname.com',
+	 		subject: 'The Quick Message'
+	 	});
+	});
+
+//Contact Ends here
+
+
+$(document).ready(function(){
+
+//Twit start here
+		twitShowStatus = 1;
+		function twitShow() {
+				$('div#twitable').animate({"marginLeft": "-=5px"}, "fast");
+				$('#twitform').animate({"marginLeft": "-=0px"}, "fast");
+				$('div#twitable').animate({"marginLeft": "+=523px"}, "slow"); 
+				$('#twitform').animate({"marginLeft": "+=520px"}, "slow");
+				$('.twitContainer .close').css({right: '-4px'});
+				twitShowStatus = 0;
+			}
+		function twitHide() {
+				$('#twitform').animate({"marginLeft": "-=520px"}, "slow");
+				$('div#twitable').animate({"marginLeft": "-=523px"}, "slow").animate({"marginLeft": "+=5px"}, "fast");
+				$('.twitContainer .close').css({right: '0px'});
+				twitShowStatus =1;
+			}
+		
+			$('div#twitable').click(
+				function() {
+				if(twitShowStatus==1)
+					twitShow();
+				else
+					twitHide();
+			
+			});
+
+		username = 'templateworldIN';// twitter User name
+		$('#twitform').twit(username);
+		$('#twitform').twit(username, {
+		limit: 5,
+		label: 'Twitter',
+		title: 'My tweets'
+		});
+		
+//Twitter ends here	
+
+//Ad starts	here	
+//-HeaderAd starts
+		$('div#headerBt').click(
+		function() {
+			$('#headerContent').animate({"marginTop": "-=60px"}, "slow");
+			$(this).animate({"marginTop": "-=60px"}, "slow").animate({"marginTop": "+=5px"}, "fast"); 
+			
+			$('#TotalBodyId').animate({"marginTop": "-=60px"}, "slow");
+			$('#TotalBodyId').css({backgroundPosition: "0 0"});
+			
+		});
+
+//-FooterAd starts
+		$('div#footerBt').click(
+		function() {
+			$('#footerContent').animate({"marginBottom": "-=45px"}, "slow");
+			$(this).animate({"marginBottom": "-=45px"}, "slow").animate({"marginBottom": "+=5px"}, "fast"); 
+			$('#fotplug').hide('slow');
+		});
+		
+//Ad ends here
+							
+});	
+	
+</script>
+<!--foot support-->
+<style type="text/css" media="all">
+#fotplug{
+	width:100%;
+	height:40px;
+	float:left;
+}
+</style>
+<script type="text/javascript" src="include/index.js"></script>
+</head>
+
+<body>
+<!--Inline css is needed for the top banner/ad, top-margin should be same as the ad-block height-->
+<!--Contact starts here -->
+<div id="contactAt">
+</div>
+<!--Contact ends here -->
+
+<!--Twitter starts here -->
+<div id="twitContent">
+	<div id="twitable"></div>
+	<div id="twitform" class="twitContainer lastNode">
+	</div>
+</div>
+<!--Twitter ends here -->
+
+
+<div id="outer-wrap">
+
+ <div id="header-wrap">
+ <div class="header-inner">
+    <div id="header">
+        <h1><a href="index.html"><img src="images/logo.png" width="177" height="32" alt=" " /></a></h1><!-- logo here -->
+        <em class="ttip">tw design</em><!--tool tip for logo-->
+
+      <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About&nbsp;Us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="usefullinks.html">Useful&nbsp;Links</a></li>
+            <li><a href="contact.html">Contact&nbsp;Us</a></li>
+        </ul>
+    </div>
+
+</div><!--header ends here-->
+</div><!--end of header-inner wrap-->
+
+<div class="body-wrap">
+<img src="images/body-top_curve.png" width="970" height="17" align="left" alt="" />
+<div id="content-wrap">
+
+    <div class="leftPan">          
+            <h3 class="title">Privacy Policy</h3>       
+
+            <p><strong>Template World is your best resource to find latest templates with high quality for less price. Sed massa tellus, aliquam rhoncus,venenatis quis, suscipit ac, libero. Praesent</strong><br /> odio tellus, posuere sed, dictum sed, fermentum at, orci.</p>
+            <p>Aenean arcu tortor, suscipit vitae, hendrerit condimentum, dapibus ac, nulla. Curabitur tempor. Donec dapibus placerat ipsum. Nulla facilisi. Aliquam ut leo quis nunc adipiscing faucibus. Mauris non quam ac eros rutrum fringilla. Quisque ut turpis. Nullam rhoncus feugiat quam. Nunc enim nibh, fermentum sed, lobortis ac, pellen-tesque ut, velonec pretium, felis eget ultrices.</p>			<p>Duis vitae nisi nibh, at mattis odio. Suspendisse sit amet elit leo. Morbi ultrices nibh id dolor sodales sit amet pharetra justo facilisis. Etiam vulputate est sit amet neque tincidunt eleifend. Ut vel felis in leo feugiat ullamcorper in vel ligula. Donec velit sem, tempor non fermentum at, convallis sed lorem. Quisque quis nibh sit amet purus tincidunt ullamcorper. Integer tortor mauris, adipiscing et lacinia a, tempor non diam.</p>
+            
+            <p>Proin magna lectus, imperdiet nec eleifend vel, rutrum eget urna. Nullam eu arcu sit amet leo porta convallis vel aliquet enim. Nam venenatis tincidunt vestibulum. In tincidunt quam arcu, eget ultricies dolor. Ut vulputate ipsum vitae ipsum consequat blandit. Sed quis neque sed sem egestas fringilla.</p>
+            
+            <p>Vestibulum dictum cursus nunc, convallis lacinia arcu luctus pulvinar. Proin blandit mollis justo vulputate semper. Morbi felis orci, condimentum vel hendrerit vel, accumsan non dolor. Vestibulum at egestas dui. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc eu dolor nisl, faucibus ornare lacus. Pellentesque at sem leo, nec feugiat sapien.</p>
+            <p>Aenean arcu tortor, suscipit vitae, hendrerit condimentum, dapibus ac, nulla. Curabitur tempor. Donec dapibus placerat ipsum. Nulla facilisi. Aliquam ut leo quis nunc adipiscing faucibus. Mauris non quam ac eros rutrum fringilla. Quisque ut turpis. Nullam rhoncus feugiat quam. Nunc enim nibh, fermentum sed, lobortis ac, pellen-tesque ut, velonec pretium, felis eget ultrices.</p>			<p>Duis vitae nisi nibh, at mattis odio. Suspendisse sit amet elit leo. Morbi ultrices nibh id dolor sodales sit amet pharetra justo facilisis. Etiam vulputate est sit amet neque tincidunt eleifend. Ut vel felis in leo feugiat ullamcorper in vel ligula. Donec velit sem, tempor non fermentum at, convallis sed lorem. Quisque quis nibh sit amet purus tincidunt ullamcorper. Integer tortor mauris, adipiscing et lacinia a, tempor non diam.</p>
+            
+            <p>Proin magna lectus, imperdiet nec eleifend vel, rutrum eget urna. Nullam eu arcu sit amet leo porta convallis vel aliquet enim. Nam venenatis tincidunt vestibulum. In tincidunt quam arcu, eget ultricies dolor. Ut vulputate ipsum vitae ipsum consequat blandit. Sed quis neque sed sem egestas fringilla.</p>
+            <a href="more.html" class="more">Read More>></a>
+     </div><!--end of leftPan-->
+
+     <div class="rightPan">
+     	 <h3>Read Updates</h3>
+         <ul>
+           <li class="box1"><p><a href="more.html">Dapuutrum pharetra</a><br />Puisque tempus ligula dignissim
+ustouisque ornare mielnis.</p></li>
+
+           <li class="box1"><p><a href="more.html">Dapuutrum pharetra</a><br />Puisque tempus ligula dignissim
+ustouisque ornare mielnis.</p></li>
+
+           <li class="box3"><p><a href="more.html">Dapuutrum pharetra</a><br />Puisque tempus ligula dignissim
+ustouisque ornare mielnis.</p></li>
+
+           <li class="box4"><p><a href="more.html">Dapuutrum pharetra</a><br />Puisque tempus ligula dignissim
+ustouisque ornare mielnis.</p></li>
+
+           <li class="box5"><p><a href="more.html">Dapuutrum pharetra</a><br />Puisque tempus ligula dignissim
+ustouisque ornare mielnis.</p></li>
+         </ul><!--end of lists in column right-->
+     </div><!--end of rightPan-->
+
+ </div>
+    <!--end of content-wrapper-->
+
+<div id="lower-content">
+     <div class="lowerLeft">
+         <h4>What client say's</h4>
+
+         <blockquote>“Sullam rhoncus feugiat qeniibh, fermentum sed, lobortis ac, pellentesque ut, velionec pretium felis eget ultrices rhoncus,lacus convallis tortor, at mollis erat risus ac duionec mattis Aenean nulla nisl, dictum semper, dignissim quis, tempus in, magna. Nullam elit massa, ornare quis, auctor non, molestie quis, felis.</blockquote>
+
+         <p class="sign">- Leslie Anne M.</p>
+     </div>
+
+     <div class="lowerRight">
+         <h4>Get in touch with us</h4>
+
+         <p><strong>Name of the Company</strong><br />Global Urban Observatory,<br />Monitoring Systems Branch, UN-HABITAT<br />
+         Telephone: +1 123 456 7890<br />E-mail: <a href="more.html">mail@yoursitename.com</a></p>
+     </div>
+</div><!--end of lower content-->
+<img src="images/curve-botom.png" width="970" height="12" alt=" " align="left" />
+<div id="footer-wrap">
+    <div id="footer">
+    <!--copyright content here-->
+         <p class="copyright">&copy; Your Copyright Info Here.</p>
+		
+         <p class="sign">Designed by: <a href="http://www.templateworld.com" title="Template World" target="_blank" style="color:#fff;">Template World</a></p>	
+            
+         <ul class="footNav">
+            <li><a href="http://jigsaw.w3.org/css-validator/check/referer" style="padding-left:0">CSS</a></li><li>|</li>
+            <li><a href="http://validator.w3.org/check?uri=referer">XHTML</a></li><li>|</li>
+            <li><a href="privacy.html">Privacy Policy</a></li><li>|</li>
+            <li><a href="sitemap.html">Sitemap</a></li><li>|</li>
+            <li><a href="#">RSS Feed</a></li>
+         </ul><!--end of footer navigation-->
+    </div><!--end of footer-content-->
+</div><!--end of footer-wrap-->
+
+</div>
+</div><!--end of outer-wrapper-->
+
+</body>
+
+</html>
